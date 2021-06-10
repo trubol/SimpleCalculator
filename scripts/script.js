@@ -3,6 +3,15 @@ var firstNumber;
 var secondNumber;
 let inputBoxTwo = document.getElementById('operatorBox');
 let buttonOne=document.getElementById('buttonOne');
+let buttonTwo=document.getElementById('buttonTwo');
+let buttonThree=document.getElementById('buttonThree');
+let buttonFour=document.getElementById('buttonFour');
+let buttonFive=document.getElementById('buttonFive');
+let buttonSix=document.getElementById('buttonSix');
+let buttonSeven=document.getElementById('buttonSeven');
+let buttonEight=document.getElementById('buttonEight');
+let buttonNine=document.getElementById('buttonNine');
+let buttonZero=document.getElementById('buttonZero');
 let buttonPlus = document.getElementById('buttonPlus');
 let buttonMinus = document.getElementById('buttonMinus');
 let buttonMultiply = document.getElementById('buttonMultiply');
@@ -11,9 +20,63 @@ let buttonAnswer = document.getElementById('buttonAnswer');
 let buttonClear = document.getElementById('buttonClear');
 let resultText = document.getElementById('resultText');
 
-// I can't figure out how to get a number button to add its value and display in the input field.
 buttonOne.addEventListener("click", function (e) {
     enterNumber();
+    inputBox.value=inputBox.value+1;
+    console.log(inputBox.value);
+})
+
+buttonTwo.addEventListener("click", function (e) {
+    enterNumber();
+    inputBox.value=inputBox.value+2;
+    console.log(inputBox.value);
+})
+
+buttonThree.addEventListener("click", function (e) {
+    enterNumber();
+    inputBox.value=inputBox.value+3;
+    console.log(inputBox.value);
+})
+
+buttonFour.addEventListener("click", function (e) {
+    enterNumber();
+    inputBox.value=inputBox.value+4;
+    console.log(inputBox.value);
+})
+
+buttonFive.addEventListener("click", function (e) {
+    enterNumber();
+    inputBox.value=inputBox.value+5;
+    console.log(inputBox.value);
+})
+
+buttonSix.addEventListener("click", function (e) {
+    enterNumber();
+    inputBox.value=inputBox.value+6;
+    console.log(inputBox.value);
+})
+
+buttonSeven.addEventListener("click", function (e) {
+    enterNumber();
+    inputBox.value=inputBox.value+7;
+    console.log(inputBox.value);
+})
+
+buttonEight.addEventListener("click", function (e) {
+    enterNumber();
+    inputBox.value=inputBox.value+8;
+    console.log(inputBox.value);
+})
+
+buttonNine.addEventListener("click", function (e) {
+    enterNumber();
+    inputBox.value=inputBox.value+9;
+    console.log(inputBox.value);
+})
+
+buttonZero.addEventListener("click", function (e) {
+    enterNumber();
+    inputBox.value=inputBox.value+0;
     console.log(inputBox.value);
 })
 
@@ -45,9 +108,8 @@ buttonClear.addEventListener("click", function (e) {
     clear();
 })
 
-// My attempt at trying to get the number button to add its value to the inputBox
 function enterNumber() {
-    inputBox.value=inputBox.value+inputBox.value;
+    inputBox.value=inputBox.value;
 }
 
 function numberPlus() {
